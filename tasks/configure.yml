@@ -13,5 +13,3 @@
   # If config changes, restart telegraf and confirm it remained running
   notify:
     - "restart hddtemp"
-    - "check status"
-    - "assert running"

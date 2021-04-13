@@ -1,6 +1,6 @@
 ---
 
 - name: install hddtemp packages
-  apt:
+  package:
     name: "{{ hddtemp_packages }}"
     state: latest
