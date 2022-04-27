@@ -1,6 +1,7 @@
 ---
 galaxy_info:
   author: Alex Kretzschmar
+  role_name: hddtemp
   description: Installs hddtemp and configures it for Debian Linux
   issue_tracker_url: https://github.com/ironicbadger/ansible-role-hddtemp/issues
   license: GPLv2
