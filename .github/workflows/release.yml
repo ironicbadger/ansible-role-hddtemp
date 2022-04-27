@@ -9,7 +9,6 @@ on:
 
 env:
   GALAXY_USERNAME: IronicBadger
-  WORKDIR: ironicbadger.hddtemp
 
 jobs:
 
@@ -31,6 +30,9 @@ jobs:
       - name: Install Ansible.
         run: pip3 install ansible-core
 
+      # Galaxy uses CamelCase username but GitHub is all lowercase
+      # This concatenates the versions together to work with
+      # And triggers an import on Galaxy
       - name: Trigger a new import on Galaxy.
         run: >-
           ansible-galaxy role import --api-key ${{ secrets.GALAXY_API_KEY }}
