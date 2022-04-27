@@ -33,4 +33,4 @@ jobs:
       - name: Trigger a new import on Galaxy.
         run: >-
           ansible-galaxy role import --api-key ${{ secrets.GALAXY_API_KEY }}
-          $(echo IronicBadger/hddtemp | cut -d/ -f1) IronicBadger/hddtemp | cut -d/ -f2)
+          $(echo IronicBadger/hddtemp | cut -d/ -f1) $(echo IronicBadger/hddtemp | cut -d/ -f2)
