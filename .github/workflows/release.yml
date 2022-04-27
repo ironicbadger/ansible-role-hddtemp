@@ -11,9 +11,9 @@ env:
   GALAXY_USERNAME: IronicBadger
   WORKDIR: ironicbadger.hddtemp
 
-defaults:
-  run:
-    working-directory: '${{ env.WORKDIR }}'
+# defaults:
+#   run:
+#     working-directory: '${{ env.WORKDIR }}'
 
 jobs:
 
