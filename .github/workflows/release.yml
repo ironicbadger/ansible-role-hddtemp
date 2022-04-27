@@ -4,20 +4,11 @@ on:
   - push
 
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
         uses: actions/checkout@v2
-        with:
-          path: "${{ github.repository }}"
-      - name: molecule
-        uses: robertdebock/molecule-action@4.0.7
-  release:
-    needs:
-      - test
-    runs-on: ubuntu-latest
-    steps:
       - name: galaxy
         uses: robertdebock/galaxy-action@1.2.0
         with:
