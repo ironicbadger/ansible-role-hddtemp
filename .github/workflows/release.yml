@@ -11,10 +11,6 @@ env:
   GALAXY_USERNAME: IronicBadger
   WORKDIR: ironicbadger.hddtemp
 
-# defaults:
-#   run:
-#     working-directory: '${{ env.WORKDIR }}'
-
 jobs:
 
   release:
@@ -22,10 +18,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      - name: Check out the codebase.
-        uses: actions/checkout@v2
-        with:
-          path: '${{ env.WORKDIR }}'
+      # - name: Check out the codebase.
+      #   uses: actions/checkout@v2
+      #   with:
+      #     path: '${{ env.WORKDIR }}'
 
       - name: Set up Python 3.
         uses: actions/setup-python@v2
