@@ -4,7 +4,6 @@ name: Release
     tags:
       - '*'
 
-
 env:
   GALAXY_USERNAME: IronicBadger
 
